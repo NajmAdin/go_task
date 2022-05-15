@@ -10,7 +10,7 @@ import (
 func main() {
 
 	//                            user password     server or ip        database
-	db, err := sql.Open("mysql", "root:rootroot@tcp(172.31.212.242:3306)/servddb")
+	db, err := sql.Open("mysql", "root:rootroot@tcp(0.0.0.0:3306)/servddb")
 
 	if err != nil {
 		panic(err)
